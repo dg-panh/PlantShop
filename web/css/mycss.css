@@ -1,0 +1,29 @@
+*{
+box-sizing:border-box;
+}
+html{ font-family: arial;
+font-size: 12px;
+}
+header,section,footer,nav,ul { float: left;width: 100%;}
+header, nav, footer{ height: 100px;
+background-color: #e1f5eb;
+}
+section { height: auto;}
+header li{width:10%;
+list-style-type: none;
+text-align: center;
+float:left;
+}
+a { color: #006666;
+font-size: 1.5em;
+text-decoration: none;
+}
+header li:last-child { width:30%; float:right;}
+#logo { width: 100px; height: 100px; }
+.form table{width:50%;}
+.product {width: 20%; height: auto; float:left; margin: 5%;}
+.order { border: 1px solid #cccccc; width:100%; margin: 1%;}
+.order tr:first-child{ width:100%; background-color:#e1eee7 ; color: #006666;}
+.order td{ color:black; width: 15%;}
+.plantimg { width:100px; height: 100px;}
+.shopping { width:70%;}

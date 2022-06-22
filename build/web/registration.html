@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/mycss.css" type="text/css" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href=""><img src="images/logo.jpg"></a> </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="login.html" >Login</a></li>
+                    <li><form action="searchServlet" method="POST" class="form">
+                            <input type="text" name="txtsearch">
+                            <select name="searchby">
+                                <option value="byname">By name</option>
+                                <option value="bycate">By category</option>
+                            </select>
+                            <input type="submit" value="Search" name="action" >
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <form action="registerServlet" method="POST" class="form">
+                <h1>Register</h1>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" name="txtemail" required=""></td>
+                    </tr>
+                    <tr>
+                        <td>Full name</td>
+                        <td><input type="text" name="txtfullname" required=""></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="txtpassword" required=""></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="text" name="txtphone" required=""></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Create"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <footer>
+            <p></p>
+        </footer>
+    </body>
+
+</html>
